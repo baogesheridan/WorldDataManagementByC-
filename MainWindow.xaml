@@ -1,0 +1,29 @@
+﻿<Window x:Class="A2baoyongzhao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2baoyongzhao"
+        mc:Ignorable="d"
+        Title="World Database" Height="450" Width="800">
+    <Grid>
+
+        <ComboBox x:Name="cbContinent" HorizontalAlignment="Left" Margin="160,31,0,0"
+          VerticalAlignment="Top" Width="166" SelectionChanged="cbContinent_SelectionChanged"/>
+
+        <ListBox x:Name="lbCountry"  Margin="36,103,447,177"
+                 SelectionChanged="lbCountry_SelectionChanged"/>
+        <Label Content="Continents" HorizontalAlignment="Left" Margin="36,24,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Countries" HorizontalAlignment="Left" Margin="36,60,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Language:" HorizontalAlignment="Left" Margin="45,275,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Currency:" HorizontalAlignment="Left" Margin="45,311,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <DataGrid x:Name="grdCities"  Margin="436,76,11,92"/>
+        <Label Content="Cities" HorizontalAlignment="Left" Margin="438,24,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="btnAddContinent" Content="Add Continents" HorizontalAlignment="Left" Margin="89,375,0,0" VerticalAlignment="Top" Height="49" Width="154" FontWeight="Bold" FontSize="16" Click="btnAddContinent_Click" />
+        <Button x:Name="btnAddCountry" Content="Add Countries" HorizontalAlignment="Left" Margin="331,375,0,0" VerticalAlignment="Top" Height="49" Width="154" FontWeight="Bold" FontSize="16" Click="btnAddCountry_Click"/>
+        <Button x:Name="btnAddCity" Content="Add Cities" HorizontalAlignment="Left" Margin="567,375,0,0" VerticalAlignment="Top" Height="49" Width="154" FontWeight="Bold" FontSize="16" Click="btnAddCity_Click"/>
+        <Label x:Name="lblLanguage" Content="" HorizontalAlignment="Left" Margin="207,277,0,0" VerticalAlignment="Top" Width="139" FontSize="16"/>
+        <Label x:Name="lblCurrency" Content="" HorizontalAlignment="Left" Margin="207,311,0,0" VerticalAlignment="Top" Width="139" FontSize="16"/>
+
+    </Grid>
+</Window>
